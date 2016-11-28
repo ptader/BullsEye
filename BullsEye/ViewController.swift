@@ -19,17 +19,35 @@ class ViewController: UIViewController {
   @IBOutlet weak var targetLabel: UILabel!
   @IBOutlet weak var scoreLabel: UILabel!
   @IBOutlet weak var roundLabel: UILabel!
-  @IBOutlet weak var startOverButton: UIButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    startNewRound()
+    startNewGame()
     updateLabels()
+    
+    // Code to make the slider look nice.
+    let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
+    slider.setThumbImage(thumbImageNormal, for: .normal)
+    let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
+    slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
+    let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+    let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
+    let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
+    slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
+    let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
+    let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
+    slider.setMaximumTrackImage(trackRightResizable, for: .normal)
+  
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  }
+  
+  func startNewGame(){
+    score = 0
+    round = 0
+    startNewRound()
   }
 
   func startNewRound(){
@@ -39,12 +57,14 @@ class ViewController: UIViewController {
     slider.value = Float(currentValue) // UISlider is type float.
   }
   
-  
-  
   func updateLabels(){
     targetLabel.text = String(targetValue)
     scoreLabel.text = String(score)
     roundLabel.text = String(round)
+  }
+  @IBAction func startOverButton(_ sender: Any) {
+    startNewGame()
+    updateLabels()
   }
   
   @IBAction func showAlert(){
