@@ -13,7 +13,6 @@
 		8EA7D9121DDD1F43008C724F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA7D9111DDD1F43008C724F /* ViewController.swift */; };
 		8EA7D9151DDD1F43008C724F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA7D9131DDD1F43008C724F /* Main.storyboard */; };
 		8EA7D9171DDD1F43008C724F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EA7D9161DDD1F43008C724F /* Assets.xcassets */; };
-		8EA7D91A1DDD1F43008C724F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA7D9181DDD1F43008C724F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		8EA7D9111DDD1F43008C724F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8EA7D9141DDD1F43008C724F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EA7D9161DDD1F43008C724F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8EA7D9191DDD1F43008C724F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EA7D91B1DDD1F43008C724F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 				8EA7D9131DDD1F43008C724F /* Main.storyboard */,
 				8E1AEF6B1DE3890E008AF16F /* AboutViewController.swift */,
 				8EA7D9161DDD1F43008C724F /* Assets.xcassets */,
-				8EA7D9181DDD1F43008C724F /* LaunchScreen.storyboard */,
 				8EA7D91B1DDD1F43008C724F /* Info.plist */,
 			);
 			path = BullsEye;
@@ -130,7 +127,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EA7D91A1DDD1F43008C724F /* LaunchScreen.storyboard in Resources */,
 				8E243F011DEC6FDA00AB55E7 /* BullsEye.html in Resources */,
 				8EA7D9171DDD1F43008C724F /* Assets.xcassets in Resources */,
 				8EA7D9151DDD1F43008C724F /* Main.storyboard in Resources */,
@@ -159,14 +155,6 @@
 				8EA7D9141DDD1F43008C724F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8EA7D9181DDD1F43008C724F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EA7D9191DDD1F43008C724F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
